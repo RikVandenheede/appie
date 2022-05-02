@@ -1,0 +1,20 @@
+@mixin voorbeeld {
+  padding: 0 0 1rem;
+}
+
+.weirdchamp {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+
+  &__header {
+    @include voorbeeld;
+  }
+  &__content {
+    @include voorbeeld;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}

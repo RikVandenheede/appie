@@ -1,0 +1,60 @@
+@import "./colors.scss";
+@import "./fonts.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: $bodyFontSize;
+}
+
+h1,
+h2 {
+  color: $primaryColor;
+}
+
+h3,
+h4,
+h5 {
+  color: $primaryColor;
+  font-family: $bodyFont;
+  font-weight: bold;
+}
+
+li {
+  color: $primaryColor;
+  font-family: $bodyFont;
+  font-size: $bodyFontSize;
+}
+
+label {
+  color: $primaryColor;
+  font-family: $bodyFont;
+  font-size: $bodyFontSize;
+}
+
+// Deze gaat nog weg
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+// nav {
+//   padding: 30px;
+//   display: flex;
+//   justify-content: flex-end;
+
+//   a {
+//     font-weight: bold;
+//     color: #2c3e50;
+
+//     &.router-link-exact-active {
+//       color: #42b983;
+//     }
+//   }
+// }
