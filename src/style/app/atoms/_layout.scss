@@ -1,0 +1,14 @@
+.layout-topnavigation {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  & > * {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__title {
+    margin-top: 10px;
+  }
+}

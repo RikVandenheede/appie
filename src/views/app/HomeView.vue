@@ -1,6 +1,7 @@
 <template>
   <main>
-    <Layout :title="{ title: 'Test' }"> </Layout>
+    <Layout :options="{ title: 'pog zog', arrow: true, search: true }">
+    </Layout>
     <Navigation />
   </main>
 </template>
