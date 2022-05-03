@@ -6,7 +6,7 @@
     <p class="weirdchamp__content">
       Waarheid Waarheid Waarheid Waarheid Waarheid Waarheid
     </p>
-    <img class="weirdchamp__img" src="../../../public/for.jpeg" alt="meme" />
+    <img class="weirdchamp__img" src="../../../../public/for.jpeg" alt="meme" />
   </div>
 </template>
 

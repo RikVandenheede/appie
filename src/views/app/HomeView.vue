@@ -7,8 +7,8 @@
 
 <script>
 import { defineComponent } from "vue";
-import WeirdChamp from "@/components/atoms/Weirdchamp.vue";
-import Navigation from "@/components/molecules/Navigation.vue";
+import WeirdChamp from "@/components/app/atoms/Weirdchamp.vue";
+import Navigation from "@/components/app/molecules/Navigation.vue";
 
 export default defineComponent({
   name: "HomeView",
