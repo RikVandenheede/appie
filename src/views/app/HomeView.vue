@@ -1,5 +1,5 @@
 <template>
-  <Layout :options="{ title: 'pog zog', arrow: true, search: true }"> </Layout>
+  <Layout :options="{ title: 'Home', arrow: true, search: true }" />
   <Navigation />
 </template>
 

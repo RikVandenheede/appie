@@ -43,7 +43,8 @@
         </svg>
       </div>
     </div>
-    <h1 class="layout-topnavigation__title">{{ options.title }}</h1>
+    <h1 class="layout__title">{{ options.title }}</h1>
+    <slot />
   </main>
 </template>
 
