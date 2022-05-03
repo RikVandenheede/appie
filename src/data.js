@@ -1,5 +1,5 @@
-function dataObject() {
-  let data = [
+
+  export let data = [
     //{id:0, brand:"", name:"", category:[""], subcategory:[""], amount:0, price:2.5, description:"", nutriScore:"", previewImg:""},
     ////////////////////////////////////////////////////////////////ZUIVEL////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////EIREN////////////////////////////////////////////////////////////////
@@ -467,5 +467,9 @@ function dataObject() {
         "https://images.collectandgo.be/images/step/JPG/JPG/500x500/std.lang.all/22/76/asset-2132276.jpg",
     },
   ];
-  return data;
-}
+
+
+
+//export default{
+//  dataObject
+//}
