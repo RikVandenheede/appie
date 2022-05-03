@@ -1,7 +1,12 @@
 <template lang="">
-    <div>
-        <h3>{{item.name}}</h3>
-        <p>{{item.brand}}</p>
+    <div class="winkewagen-item">
+        <div class="winkewagen-item__img" >
+            <img :src="item.previewImg">
+        </div>
+        <div class="winkewagen-item__text">
+            <p class="winkewagen-item__text__name">{{item.name}}</p>
+            <p class="winkewagen-item__text__brand">{{item.brand}}</p>
+        </div>
     </div>
 </template>
 <script>

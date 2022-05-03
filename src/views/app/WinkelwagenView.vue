@@ -30,14 +30,14 @@ export default defineComponent({
   data() {
     return {
       error: Object,
-      inCart:[ {brand:"xd"} ]
+      inCart:[]
     }
   },
   created() {
     //add van test data
     console.log(data);
     let arry = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 10; i++) {
         arry.push(data[i])
     }
     this.inCart = arry;
