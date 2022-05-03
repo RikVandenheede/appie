@@ -8,11 +8,13 @@
 }
 
 p {
+  font-family: $bodyFont;
   font-size: $bodyFontSize;
 }
 
 h1,
 h2 {
+  font-family: $bodyFont;
   color: $black;
 }
 
