@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <main class="layout">
     <div v-if="options.arrow || options.search" class="layout-topnavigation">
       <div v-if="options.arrow" class="layout-topnavigation__back">
         <svg
@@ -44,7 +44,7 @@
       </div>
     </div>
     <h1 class="layout-topnavigation__title">{{ options.title }}</h1>
-  </div>
+  </main>
 </template>
 
 <script>

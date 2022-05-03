@@ -1,9 +1,6 @@
 <template>
-  <main>
-    <Layout :options="{ title: 'pog zog', arrow: true, search: true }">
-    </Layout>
-    <Navigation />
-  </main>
+  <Layout :options="{ title: 'pog zog', arrow: true, search: true }"> </Layout>
+  <Navigation />
 </template>
 
 <script>
