@@ -1,7 +1,7 @@
 <template lang="">
     <div>
-        <h2>{{item.brand}}</h2>
-        <p>xd</p>
+        <h3>{{item.name}}</h3>
+        <p>{{item.brand}}</p>
     </div>
 </template>
 <script>

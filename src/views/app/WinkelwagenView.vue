@@ -3,7 +3,6 @@
         <Layout :options="{ title: 'Winkelwagentje', arrow: false, search: false }">
             <div class="" v-if="inCart != null">
                 <WinkelwagenItem v-for="item in inCart" :key="item.brand" :item="item" />
-                <p>{{inCart[0].brand}}</p>
             </div>
             <div class="" v-else>
                 <p>Je winkelwagentje is leeg.</p>
