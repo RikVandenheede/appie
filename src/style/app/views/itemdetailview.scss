@@ -1,0 +1,37 @@
+.container {
+    overflow: hidden;
+
+    .itemdetail{
+        
+        &__img{
+            max-width: 350px;
+            max-height: 300px;
+            height:300px;
+            display:flex;
+            justify-content: center;
+
+            img{
+                height: 300px;
+                min-width: 350px;
+                max-width: 350px;
+                object-fit: contain;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &__text{
+            margin-top:60px;
+
+            &__beschrijving{
+                margin-top:20px;
+            }
+            &__voedselwaarde{
+                margin-top:25px;
+            }
+        }
+        
+    }
+}

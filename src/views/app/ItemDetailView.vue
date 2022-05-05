@@ -1,16 +1,17 @@
 <template lang="">
     <div class="container">
         <Layout :options="{ title: '', arrow: true, search: false, }">
-            <div class="itemdetail__img">
-                <img :src="item.previewImg">
+            <div class="itemdetail">
+                <div class="itemdetail__img">
+                    <img :src="item.previewImg">
+                </div>
+                <div class="itemdetail__text">
+                    <h3>{{item.name}}</h3>
+                    <p>{{item.brand}}</p>
+                    <p class="itemdetail__text__beschrijving">{{item.description}}</p>
+                    <p class="itemdetail__text__voedselwaarde">NutriScore: {{item.nutriScore}}</p>
+                </div>
             </div>
-            <div class="itemdetail__text">
-                <h3>{{item.name}}</h3>
-                <p>{{item.brand}}</p>
-                <p class="beschrijving">{{item.description}}</p>
-                <p class="voedselwaarde">NutriScore: {{item.nutriScore}}</p>
-            </div>
-            
         </Layout>
         <Navigation />
     </div>
@@ -38,34 +39,5 @@ export default {
 }
 </script>
 <style scoped>
-    .container {overflow: hidden}
-    /* TODO: dit moet nog naar sas gedaan worden + moet nog defig gemaakt worden */
-    .itemdetail__img{
-        max-width: 350px;
-        max-height: 300px;
-        height:300px;
-        display:flex;
-        justify-content: center;
-        
-    }
-    img{ 
-        height: 300px;
-        min-width: 350px;
-        max-width: 350px;
-        object-fit: contain;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .itemdetail__text{
-        margin-top:60px;
-    }
-    .beschrijving{
-        margin-top:20px;
-    }
-    .voedselwaarde{
-        margin-top:25px;
-    }
+    
 </style>
