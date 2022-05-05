@@ -2,7 +2,7 @@
     <div>
         <Layout :options="{ title: 'Winkelwagentje', arrow: false, search: false }">
             <div class="" v-if="inCart.length != 0">
-                <WinkelwagenItem v-for="item in inCart" :key="item.brand" :item="item" />
+              <WinkelwagenItem v-for="item in inCart" :key="item.id" :item="item" />
             </div>
             <div class="" v-else>
                 <p>Je winkelwagentje is leeg.</p>
@@ -43,6 +43,8 @@ export default defineComponent({
     this.inCart = arry;
     console.log(arry)
     console.log(this.inCart)
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+
   }
 });
 </script>
