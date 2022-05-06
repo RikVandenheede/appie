@@ -8,6 +8,9 @@
       <p class="winkewagen-item__text__name">{{item.name}}</p>
       <p class="winkewagen-item__text__brand">{{item.brand}}</p>
     </div>
+    <div class="winkewagen-item__hoeveelheid">
+      <p>{{item.amount}}</p>
+    </div>
   </div>
 </router-link>
 </template>
