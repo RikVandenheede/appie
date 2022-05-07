@@ -1,5 +1,6 @@
 <template>
 	<main>
+		<h1>Dit is de QR view.</h1>
 		<h1>This is the QR view end page</h1>
 
 	</main>

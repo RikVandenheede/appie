@@ -1,6 +1,9 @@
 <template>
 	<main>
-		<h1>This is the Check View</h1>
+		<h1>Dit is de check view.</h1>
+		<h1>Product werd ingescand.</h1>
+		<h1>Alles werd gescand, <br>
+		u kunt naar de kassa.</h1>
 		
         
         <Check />

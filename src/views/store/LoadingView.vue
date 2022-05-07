@@ -1,6 +1,7 @@
 <template>
 	<main>
-		<h1>This is the Loading screen</h1>
+		<h1>Dit is de loading view</h1>
+		<h1>Boodschappenlijst wordt ingeladen.</h1>
 
 	</main>
 </template>

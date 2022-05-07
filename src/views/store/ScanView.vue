@@ -1,6 +1,7 @@
 <template>
 	<main>
-		<h1>This is the Scan</h1>
+		<!-- <h1>Dit is de scan view.</h1> -->
+		<h1>Plaats de QR code binnen het frame.</h1>
 		<Scan />
 	</main>
 </template>

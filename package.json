@@ -26,5 +26,17 @@
     "expose-loader": "^3.1.0",
     "sass": "^1.32.7",
     "sass-loader": "^12.6.0"
-  }
+  },
+  "description": "## Project setup ``` npm install ```",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RikVandenheede/appie.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RikVandenheede/appie/issues"
+  },
+  "homepage": "https://github.com/RikVandenheede/appie#readme"
 }
