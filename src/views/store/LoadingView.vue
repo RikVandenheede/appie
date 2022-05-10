@@ -1,13 +1,11 @@
 <template>
-	<main>
-		<h1>Dit is de loading view</h1>
-		<h1>Boodschappenlijst wordt ingeladen.</h1>
-
-	</main>
+	<h1 class="leading">Booschappenlijst wordt ingeladen.</h1>
+	<Loading />
 </template>
 
 <script>
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
+import Loading from '@/components/store/Loading.vue'
 
 // import WeirdChamp from "@/components/store/atoms/Weirdchamp.vue";
 // import Navigation from "@/components/store/molecules/Navigation.vue";
@@ -15,6 +13,7 @@ import { defineComponent } from 'vue';
 export default defineComponent({
 	name: 'LoadingView',
 	components: {
+		Loading,
 	},
 })
 </script>
