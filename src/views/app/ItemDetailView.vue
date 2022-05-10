@@ -10,7 +10,7 @@
                         <h3>{{item.name}}</h3>
                         <p>{{item.brand}}</p>
                     </div>
-                    <div class="itemdetail__text__addtocard-button">
+                    <div class="itemdetail__text__addtocard-button" id="additemtocart-button">
                         <img src="../../../public/icons_app/addtocart.png">
                     </div>
                 </div>
