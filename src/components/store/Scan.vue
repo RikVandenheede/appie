@@ -1,16 +1,10 @@
 <template>
-	<svg
-		id="a"
-		class="qrscan"
-		xmlns="http://www.w3.org/2000/svg"
-		viewBox="0 0 176.42 176.32"
-	>
-		<path
-			class="b"
-			d="M.5,138.32v37.5H43.35m132.57-37.5v37.5h-42.85M138.42,.5h37.5V43.35M.5,38V.5H43.35"
-		/>
-		<path class="b" d="M.5,88.21H175.89M.5,106.86H175.89M.5,69.56H175.89" />
-	</svg>
+	<div class="qr-scanner">
+		<div class="box">
+			<div class="line"></div>
+			<div class="angle"></div>
+		</div>
+	</div>
 </template>
 
 <script>
@@ -24,14 +18,74 @@ export default defineComponent({
 </script>
 
 <style>
-.b {
-	fill: none;
-	stroke: #46c663;
-	stroke-miterlimit: 10;
+.qr-scanner .box {
+	width: 50vw;
+	height: 50vw;
+	max-height: 50vh;
+	max-width: 50vh;
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	border: 0.1rem solid rgba(0, 255, 51, 0.2);
 }
 
-.qrscan {
-	max-width: 180px;
-	height: auto;
+.qr-scanner .line {
+	height: calc(100% - 2px);
+	width: 100%;
+	background: linear-gradient(180deg, rgba(0, 255, 51, 0) 43%, #00ff33 211%);
+	border-bottom: 3px solid #00ff33;
+	transform: translateY(-100%);
+	animation: radar-beam 2s infinite;
+	animation-timing-function: cubic-bezier(0.53, 0, 0.43, 0.99);
+	animation-delay: 1.4s;
+}
+
+.qr-scanner .box:after,
+.qr-scanner .box:before,
+.qr-scanner .angle:after,
+.qr-scanner .angle:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 3vw;
+	height: 3vw;
+
+	border: 0.2rem solid transparent;
+}
+
+.qr-scanner .box:after,
+.qr-scanner .box:before {
+	top: 0;
+	border-top-color: #00ff33;
+}
+
+.qr-scanner .angle:after,
+.qr-scanner .angle:before {
+	bottom: 0;
+	border-bottom-color: #00ff33;
+}
+
+.qr-scanner .box:before,
+.qr-scanner .angle:before {
+	left: 0;
+	border-left-color: #00ff33;
+}
+
+.qr-scanner .box:after,
+.qr-scanner .angle:after {
+	right: 0;
+	border-right-color: #00ff33;
+}
+
+@keyframes radar-beam {
+	0% {
+		transform: translateY(-100%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
 }
 </style>

@@ -4,6 +4,8 @@
 @import "./colors.scss";
 @import "./fonts.scss";
 
+@import "./store/leading",
+"./store/container";
 //// ATOMS ////
 // @import "./atoms/weirdchamp.scss";
 // @import "./store/weirdchamp.scss";
@@ -12,4 +14,4 @@
 //// MOLECULES ////
 // @import "./molecules/navigation.scss";
 
-//// VIEWS ////     
+//// VIEWS ////
