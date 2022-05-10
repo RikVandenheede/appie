@@ -54,7 +54,9 @@
 
 .home-categories {
   &__title {
+    margin-bottom: 20px;
   }
   &__items {
+    display: flex;
   }
 }

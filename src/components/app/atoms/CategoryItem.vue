@@ -1,7 +1,15 @@
 <template>
   <div class="category-item">
-    <img :class="imageClassName" :src="imageSrource" alt="" />
-    <h3>{{ title }}</h3>
+    <div class="category-item__top">
+      <img
+        :class="imageClassName"
+        src="../../../../public/groenten.png"
+        alt="category"
+      />
+    </div>
+    <div class="category-item__bottom">
+      <h3 class="category-item__title">{{ title }}</h3>
+    </div>
   </div>
 </template>
 

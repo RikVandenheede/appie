@@ -42,6 +42,14 @@
           title="groenten"
           image="../../../../public/groenten.png"
         />
+        <CategoryItem
+          title="groenten"
+          image="../../../../public/groenten.png"
+        />
+        <CategoryItem
+          title="groenten"
+          image="../../../../public/groenten.png"
+        />
       </div>
     </section>
   </Layout>
