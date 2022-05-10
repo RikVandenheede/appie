@@ -1,11 +1,7 @@
 <template>
-  <div class="weirdchamp">
-    test
-    <img
-      class="weirdchamp__img"
-      src="../../../../public/banana.jpeg"
-      alt="banana"
-    />
+  <div class="category-item">
+    <img :class="imageClassName" :src="imageSrource" alt="" />
+    <h3>{{ title }}</h3>
   </div>
 </template>
 
@@ -14,8 +10,17 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "CategoryItem",
-  //   props: {
-  //     person: Object,
-  //   },
+  props: {
+    title: String,
+    image: String,
+  },
+  computed: {
+    imageClassName() {
+      return `category-item__${this.title.toLowerCase()}`;
+    },
+    imageSrource() {
+      return `../../../../public/${this.image}.png`;
+    },
+  },
 });
 </script>
