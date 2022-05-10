@@ -6,14 +6,17 @@
                     <img :src="item.previewImg">
                 </div>
                 <div class="itemdetail__text">
-                    <h3>{{item.name}}</h3>
-                    <p>{{item.brand}}</p>
-
+                    <div>
+                        <h3>{{item.name}}</h3>
+                        <p>{{item.brand}}</p>
+                    </div>
                     <div class="itemdetail__text__addtocard-button">
                         <img src="../../../public/icons_app/addtocart.png">
                     </div>
-                    <p class="itemdetail__text__beschrijving">{{item.description}}</p>
-                    <p class="itemdetail__text__voedselwaarde">NutriScore: {{item.nutriScore}}</p>
+                </div>
+                <div class="itemdetail__beschrijving">
+                    <p class="itemdetail__beschrijving__description">{{item.description}}</p>
+                    <p class="itemdetail__beschrijving__nutriscore">NutriScore: {{item.nutriScore}}</p>
                 </div>
             </div>
         </Layout>
