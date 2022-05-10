@@ -38,7 +38,10 @@
     <section class="home-categories">
       <h2 class="home-categories__title">Categorie</h2>
       <div class="home-categories__items">
-        <CategoryItem title="groenten" image="groenten" />
+        <CategoryItem
+          title="groenten"
+          image="../../../../public/groenten.png"
+        />
       </div>
     </section>
   </Layout>
