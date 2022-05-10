@@ -1,7 +1,7 @@
 <template lang="">
     <div>
         <Layout :options="{ title: 'Winkelwagentje', arrow: false, search: false }">
-            <div class="" v-if="inCart.length != 0">
+            <div class="item-list" v-if="inCart.length != 0">
               <WinkelwagenItem v-for="item in inCart" :key="item.id" :item="item" />
             </div>
             <div class="" v-else>

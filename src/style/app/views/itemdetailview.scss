@@ -25,6 +25,18 @@
         &__text{
             margin-top:60px;
 
+            &__addtocard-button{
+                background-color: black;
+                height: 50px;
+                width: 50px;
+                border-radius: 10px;
+                cursor: pointer;
+                //display: flex;
+                //align-self: center;
+                img{
+                    
+                }
+            }
             &__beschrijving{
                 margin-top:20px;
             }
