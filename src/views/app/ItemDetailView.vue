@@ -15,8 +15,27 @@
                     </div>
                 </div>
                 <div class="itemdetail__beschrijving">
+                    <p class="itemdetail__beschrijving__title">Meer info over dit product</p>
                     <p class="itemdetail__beschrijving__description">{{item.description}}</p>
-                    <p class="itemdetail__beschrijving__nutriscore">NutriScore: {{item.nutriScore}}</p>
+                    <div v-if="item.nutriScore == 'a'">
+                        <img class="nutriscore" src="../../../public/icons_app/nutriscoreIcons/Nutri-score-A.svg">
+                    </div>
+                    <div v-else-if="item.nutriScore == 'b'">
+                        <img class="nutriscore" src="../../../public/icons_app/nutriscoreIcons/Nutri-score-B.svg">
+                    </div>
+                    <div v-else-if="item.nutriScore == 'c'">
+                        <img class="nutriscore" src="../../../public/icons_app/nutriscoreIcons/Nutri-score-C.svg">
+                    </div>
+                    <div v-else-if="item.nutriScore == 'd'">
+                        <img class="nutriscore" src="../../../public/icons_app/nutriscoreIcons/Nutri-score-D.svg">
+                    </div>
+                    <div v-else-if="item.nutriScore == 'e'">
+                        <img class="nutriscore" src="../../../public/icons_app/nutriscoreIcons/Nutri-score-E.svg">
+                    </div>
+                    <div v-else>
+                        <p class="itemdetail__beschrijving__nutriscore">NutriScore: {{item.nutriScore}}</p>
+                    </div>
+                    
                 </div>
             </div>
         </Layout>

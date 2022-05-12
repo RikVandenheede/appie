@@ -37,7 +37,7 @@ export default defineComponent({
     //add van test data
     console.log(data);
     let arry = [];
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 51; i++) {
         arry.push(data[i])
     }
     this.inCart = arry;
