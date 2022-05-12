@@ -3,6 +3,7 @@ import HomeView from "../views/app/HomeView.vue";
 import Winkelwagentje from "../views/app/WinkelwagenView.vue";
 import ItemDetailView from "../views/app/ItemDetailView.vue";
 import AppQrView from "../views/app/QrView.vue";
+import CategoryPage from "../views/app/CategorieView.vue";
 
 const routes = [
   {
@@ -34,6 +35,11 @@ const routes = [
     path: "/qr-app",
     name: "qr-app",
     component: AppQrView,
+  },
+  {
+    path: "/:category",
+    name: "categoryPage",
+    component: CategoryPage,
   },
 ];
 

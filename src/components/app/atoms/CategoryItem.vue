@@ -1,16 +1,18 @@
 <template>
-  <div class="category-item">
-    <div class="category-item__top">
-      <img
-        :class="imageClassName"
-        src="../../../../public/groenten.png"
-        alt="category"
-      />
+  <router-link v-bind:to="{ name: 'categoryPage', params: { category: this.title }  }" class="itemlink">
+    <div class="category-item">
+      <div class="category-item__top">
+        <img
+          :class="imageClassName"
+          src="../../../../public/groenten.png"
+          alt="category"
+        />
+      </div>
+      <div class="category-item__bottom">
+        <h3 class="category-item__title">{{ title }}</h3>
+      </div>
     </div>
-    <div class="category-item__bottom">
-      <h3 class="category-item__title">{{ title }}</h3>
-    </div>
-  </div>
+  </router-link>
 </template>
 
 <script>

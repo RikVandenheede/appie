@@ -39,15 +39,15 @@
       <h2 class="home-categories__title">Categorie</h2>
       <div class="home-categories__items">
         <CategoryItem
-          title="groenten"
+          title="Groenten"
           image="../../../../public/groenten.png"
         />
         <CategoryItem
-          title="groenten"
+          title="Groenten"
           image="../../../../public/groenten.png"
         />
         <CategoryItem
-          title="groenten"
+          title="Groenten"
           image="../../../../public/groenten.png"
         />
       </div>
