@@ -4,11 +4,19 @@
             <div class="item-list" v-if="inCart.length != 0">
               <WinkelwagenItem v-for="item in inCart" :key="item.id" :item="item" />
             </div>
-            <div class="" v-else>
-                <p>Je winkelwagentje is leeg.</p>
+            <div class="item-empty" v-else>
+              <div class="item-empty__text">
+                <p class="item-empty__text__title">Je winkelwagentje is leeg.</p>
+                <p class="item-empty__text__text">klik hier voor items toe te voegen aan je winkelwagen</p>
+              </div>
+              <router-link v-bind:to="{ name: 'home' }" class="itemlink">
+                <div class="item-empty__button">
+                  <p>Ga shoppen!</p>
+                </div>
+              </router-link>
             </div>
         </Layout>
-        <Navigation />
+        <Navigation :isActive=3 />
     </div>
 </template>
 <script>
@@ -37,7 +45,7 @@ export default defineComponent({
     //add van test data
     console.log(data);
     let arry = [];
-    for (let i = 0; i < 51; i++) {
+    for (let i = 0; i < 0; i++) {
         arry.push(data[i])
     }
     this.inCart = arry;

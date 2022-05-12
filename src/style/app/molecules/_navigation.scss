@@ -10,13 +10,15 @@
   z-index: 100;
   transition: all 0.3s;
 
-  & > div {
+  & > a {
+    all: unset;
     text-align: center;
     align-self: center;
     opacity: 0.4;
 
     &.active {
       opacity: 1;
+      
       svg {
         transition: all 0.3s;
         height: 32px;
