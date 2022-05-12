@@ -53,7 +53,7 @@
       </div>
     </section>
   </Layout>
-  <Navigation />
+  <Navigation :pageNumber="3" />
 </template>
 
 <script>

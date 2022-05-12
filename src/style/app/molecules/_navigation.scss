@@ -11,18 +11,28 @@
   transition: all 0.3s;
 
   & > a {
-    all: unset;
     text-align: center;
     align-self: center;
     opacity: 0.4;
+    transition: all 0.3s;
 
-    &.active {
+    &.router-link-active {
       opacity: 1;
-      
-      svg {
+
+      & > svg {
         transition: all 0.3s;
         height: 32px;
         border-bottom: 2px solid $primaryColor;
+        animation: mymove 0.4s ease-in-out;
+
+        @keyframes mymove {
+          from {
+            height: 0px;
+          }
+          to {
+            height: 32px;
+          }
+        }
       }
     }
   }
