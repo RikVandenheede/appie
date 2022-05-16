@@ -1,6 +1,6 @@
 .itemlink{
     all: unset;
-    .winkewagen-item{
+    .categorypage-item{
         background-color: white;
         margin-bottom: 10px; 
         overflow: hidden;
@@ -50,12 +50,22 @@
 
             float: left;
             position: absolute;
-            margin-top: 70px;
-            margin-left: 305px;
+            margin-top: 25px;
+            margin-left: 250px;
 
-            p{
-                
+            //background-color: #28A745;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            img{
+                margin-top:2px;
+                margin-left:13px;
+                width: 30px;
+                height: auto;
             }
+           
         }
             
     }

@@ -6,7 +6,7 @@
                     <img :src="item.previewImg">
                 </div>
                 <div class="itemdetail__text">
-                    <div>
+                    <div class="itemdetail__text__titlebrand">
                         <h3>{{item.name}}</h3>
                         <p>{{item.brand}}</p>
                     </div>

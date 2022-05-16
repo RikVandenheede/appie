@@ -1,16 +1,16 @@
 <template lang="">
     <div>
         <router-link v-bind:to="{ name: 'ItemDetailView', params: { id: item.id } }" class="itemlink">
-            <div class="winkewagen-item">
-              <div class="winkewagen-item__img" >
+            <div class="categorypage-item">
+              <div class="categorypage-item__img" >
                 <img :src="item.previewImg">
               </div>
-              <div class="winkewagen-item__text">
-                <p class="winkewagen-item__text__name">{{item.name}}</p>
-                <p class="winkewagen-item__text__brand">{{item.brand}}</p>
+              <div class="categorypage-item__text">
+                <p class="categorypage-item__text__name">{{item.name}}</p>
+                <p class="categorypage-item__text__brand">{{item.brand}}</p>
               </div>
-              <div class="winkewagen-item__hoeveelheid">
-                <p>butto hier</p>
+              <div class="categorypage-item__hoeveelheid">
+                <img src="../../../../public/icons_app/addtocart-green.png">
               </div>
             </div>
         </router-link>
