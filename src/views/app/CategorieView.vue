@@ -1,7 +1,9 @@
 <template lang="">
     <div>
         <Layout :options="{ title: this.$route.params.category, arrow: true, search: false }">
-            <CategoryPageItem v-for="item in categoryItems" :key="item.id" :item="item" />
+            <div class="marinbottemnest">
+                <CategoryPageItem v-for="item in categoryItems" :key="item.id" :item="item" />
+            </div>
         </Layout>
         <Navigation />
     </div>
@@ -22,9 +24,10 @@ export default {
     props: ['category'],
     created() {
         console.log(this.$route.params.category);
+        let categoryName = this.$route.params.category;
 
         console.log(data);
-        let arry = data.filter(x => x.category[0] == "Groenten");
+        let arry = data.filter(x => x.category[0] == categoryName);
 
         this.categoryItems = arry;
         console.log(arry);
@@ -38,6 +41,8 @@ export default {
     },
 }
 </script>
-<style lang="">
-    
+<style scoped>
+    .marinbottemnest{
+        margin-bottom: 75px;
+    }
 </style>

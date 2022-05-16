@@ -43,12 +43,12 @@
           image="../../../../public/groenten.png"
         />
         <CategoryItem
-          title="Groenten"
-          image="../../../../public/groenten.png"
+          title="Vlees"
+          image="../../../../public/vlees.png"
         />
         <CategoryItem
-          title="Groenten"
-          image="../../../../public/groenten.png"
+          title="Zuivel"
+          image="../../../../public/zuivel.png"
         />
       </div>
     </section>

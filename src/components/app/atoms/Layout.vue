@@ -1,7 +1,7 @@
 <template>
   <main class="layout">
     <div v-if="options.arrow || options.search" class="layout-topnavigation">
-      <div v-if="options.arrow" class="layout-topnavigation__back">
+      <div v-if="options.arrow" class="layout-topnavigation__back" @click="$router.go(-1)">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="ionicon"

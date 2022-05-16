@@ -29,8 +29,12 @@ export default defineComponent({
       return `category-item__${this.title.toLowerCase()}`;
     },
     imageSrource() {
-      return `../../../../public/${this.image}.png`;
+      return `../../../../public/${this.image}.png`; //dees kan wle nooit kloppen, this.img is al een voledige link dus ge plakt een link in een link in
+                                                    //ma ngl ik heb just ook geprobeerd voor die foto te laten werken, ma idk wrm da ni gaat zu
     },
   },
+  created() {
+    console.log(this.image);
+  }
 });
 </script>
