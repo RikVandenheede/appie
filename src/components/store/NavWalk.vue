@@ -11,6 +11,7 @@
 		/>
 		<path class="b" d="M.5,88.21H175.89M.5,106.86H175.89M.5,69.56H175.89" />
 	</svg>
+
 </template>
 
 <script>
@@ -24,6 +25,10 @@ export default defineComponent({
 </script>
 
 <style>
+.list-item {
+	color: white;
+}
+
 .b {
 	fill: none;
 	stroke: #46c663;
