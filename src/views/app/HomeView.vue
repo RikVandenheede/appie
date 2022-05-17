@@ -51,9 +51,14 @@
 
 <script>
 import { defineComponent } from "vue";
+<<<<<<< HEAD
+import WeirdChamp from "@/components/app/atoms/Weirdchamp.vue";
+import Navigation from "@/components/app/molecules/Navigation.vue";
+=======
 import Navigation from "@/components/app/molecules/Navigation.vue";
 import Layout from "@/components/app/atoms/Layout.vue";
 import CategoryItem from "@/components/app/atoms/CategoryItem.vue";
+>>>>>>> a73825a2d61f6ab65deb64954d24b537e3a1627a
 
 export default defineComponent({
   name: "HomeView",

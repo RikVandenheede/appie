@@ -1,7 +1,41 @@
 <template>
+<<<<<<< HEAD
+	<div class="container-background">
+		<nav>
+			<router-link to="/">Home</router-link> |
+			<router-link to="/about">About</router-link>
+		</nav>
+		<router-view />
+	</div>
+</template>
+
+<style lang="scss">
+@import './style/main.scss';
+// #app {
+//   font-family: Avenir, Helvetica, Arial, sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   text-align: center;
+//   color: #2c3e50;
+// }
+
+// nav {
+//   padding: 30px;
+
+//   a {
+//     font-weight: bold;
+//     color: #2c3e50;
+
+//     &.router-link-exact-active {
+//       color: #42b983;
+//     }
+//   }
+// }
+=======
   <router-view />
 </template>
 
 <style lang="scss">
 @import "./style/main.scss";
+>>>>>>> a73825a2d61f6ab65deb64954d24b537e3a1627a
 </style>
