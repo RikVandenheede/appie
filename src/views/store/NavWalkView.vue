@@ -1,6 +1,7 @@
 <template>
 	<main>
-		<h1>This is the Navigation</h1>
+        <div>Left</div>
+        <div>Left</div>
 
 	</main>
 </template>
