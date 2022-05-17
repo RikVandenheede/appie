@@ -1,0 +1,34 @@
+.shoppinglist-container {
+    // margin-top: 3rem;
+    // margin-bottom: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.shoppinglist-list {
+    columns: 2;
+}
+
+.shoppinglist-content {
+    margin-left: auto;
+    margin-right: auto;
+
+    // display: flex;
+    // flex-flow: column wrap;
+    // justify-content: flex-start;
+
+    // position: relative;
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    // max-width: 100%;
+    max-height: 375px;
+}
+
+.list-item {
+    color: $storeGreen;
+    & + & {
+        margin-top: 1rem;
+    }
+}
