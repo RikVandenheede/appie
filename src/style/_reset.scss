@@ -8,18 +8,20 @@
 }
 
 p {
+  font-family: $bodyFont;
   font-size: $bodyFontSize;
 }
 
 h1,
 h2 {
-  color: $primaryColor;
+  font-family: $bodyFont;
+  color: $black;
 }
 
 h3,
 h4,
 h5 {
-  color: $primaryColor;
+  color: $black;
   font-family: $bodyFont;
   font-weight: bold;
 }
@@ -38,23 +40,9 @@ label {
 
 // Deze gaat nog weg
 #app {
+  overflow: hidden;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
-
-// nav {
-//   padding: 30px;
-//   display: flex;
-//   justify-content: flex-end;
-
-//   a {
-//     font-weight: bold;
-//     color: #2c3e50;
-
-//     &.router-link-exact-active {
-//       color: #42b983;
-//     }
-//   }
-// }

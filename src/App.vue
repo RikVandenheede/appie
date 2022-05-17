@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 	<div class="container-background">
 		<nav>
 			<router-link to="/">Home</router-link> |
@@ -30,4 +31,11 @@
 //     }
 //   }
 // }
+=======
+  <router-view />
+</template>
+
+<style lang="scss">
+@import "./style/main.scss";
+>>>>>>> a73825a2d61f6ab65deb64954d24b537e3a1627a
 </style>

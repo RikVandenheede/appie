@@ -1,0 +1,46 @@
+.container {
+  overflow: hidden;
+}
+
+.container .itemdetail__img {
+  max-width: 350px;
+  max-height: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .itemdetail__img img {
+  height: 300px;
+  min-width: 350px;
+  max-width: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .itemdetail__text {
+  margin-top: 60px;
+}
+
+.container .itemdetail__text__beschrijving {
+  margin-top: 20px;
+}
+
+.container .itemdetail__text__voedselwaarde {
+  margin-top: 25px;
+}
+/*# sourceMappingURL=itemdetailview.css.map */

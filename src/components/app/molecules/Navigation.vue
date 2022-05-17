@@ -1,6 +1,9 @@
 <template>
   <nav class="navigation">
-    <div :class="{ active: isActive == 1 }">
+    <router-link
+      v-bind:to="{ name: 'qr-app' }"
+      :class="{ active: isActive == pageNumber }"
+    >
       <svg
         @click="isActive = 1"
         xmlns="http://www.w3.org/2000/svg"
@@ -43,8 +46,11 @@
           />
         </g>
       </svg>
-    </div>
-    <div :class="{ active: isActive == 2 }">
+    </router-link>
+    <router-link
+      v-bind:to="{ name: 'home' }"
+      :class="{ active: isActive == pageNumber }"
+    >
       <svg
         @click="isActive = 2"
         xmlns="http://www.w3.org/2000/svg"
@@ -60,8 +66,11 @@
           fill="#28a745"
         />
       </svg>
-    </div>
-    <div :class="{ active: isActive == 3 }">
+    </router-link>
+    <router-link
+      v-bind:to="{ name: 'winkelwagentje' }"
+      :class="{ active: isActive == pageNumber }"
+    >
       <svg
         @click="isActive = 3"
         xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +118,7 @@
           />
         </g>
       </svg>
-    </div>
+    </router-link>
   </nav>
 </template>
 
@@ -119,11 +128,14 @@ import { defineComponent } from "vue";
 export default defineComponent({
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Navigation",
-  props: {},
+  props: {
+    pageNumber: Number,
+  },
   data() {
     return {
       isActive: false,
     };
   },
+  computed() {},
 });
 </script>

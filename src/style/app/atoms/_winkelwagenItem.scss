@@ -1,0 +1,63 @@
+.itemlink{
+    all: unset;
+    .winkewagen-item{
+        background-color: white;
+        margin-bottom: 10px; 
+        overflow: hidden;
+        border-radius: 10px;
+        display: flex;
+        height: 100px;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+        padding-right: 10px;
+
+            
+        &__text{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 20px;
+        
+            &__name{
+                font-size: 15px;
+                margin-bottom: 3px;
+                font-weight: 600;
+                color: #0E7500;
+            }
+
+            &__brand{
+                font-size: 10px;
+                color: #23A811;
+            }
+        }
+    
+        &__img{
+            height: 100px;
+            min-width: 125px;
+            max-width: 125px;
+            object-fit: contain;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: auto;
+                height: 100%;
+            }
+        }
+        
+        &__hoeveelheid{
+
+            float: left;
+            position: absolute;
+            margin-top: 70px;
+            margin-left: 305px;
+
+            p{
+                
+            }
+        }
+            
+    }
+    
+}
