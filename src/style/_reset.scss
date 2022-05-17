@@ -2,46 +2,50 @@
 @import "./fonts.scss";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 p {
-  font-size: $bodyFontSize;
+    font-size: $bodyFontSize;
 }
 
 h1,
 h2 {
-  color: $primaryColor;
+    color: $primaryColor;
+}
+
+h2.nav-white {
+    color: $white;
 }
 
 h3,
 h4,
 h5 {
-  color: $primaryColor;
-  font-family: $bodyFont;
-  font-weight: bold;
+    color: $primaryColor;
+    font-family: $bodyFont;
+    font-weight: bold;
 }
 
 li {
-  color: $primaryColor;
-  font-family: $bodyFont;
-  font-size: $bodyFontSize;
+    color: $primaryColor;
+    font-family: $bodyFont;
+    font-size: $bodyFontSize;
 }
 
 label {
-  color: $primaryColor;
-  font-family: $bodyFont;
-  font-size: $bodyFontSize;
+    color: $primaryColor;
+    font-family: $bodyFont;
+    font-size: $bodyFontSize;
 }
 
 // Deze gaat nog weg
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
 }
 
 // nav {
