@@ -38,18 +38,11 @@
     <section class="home-categories">
       <h2 class="home-categories__title">Categorie</h2>
       <div class="home-categories__items">
-        <CategoryItem
-          title="Groenten"
-          image="../../../../public/groenten.png"
-        />
-        <CategoryItem
-          title="Vlees"
-          image="../../../../public/vlees.png"
-        />
-        <CategoryItem
-          title="Zuivel"
-          image="../../../../public/zuivel.png"
-        />
+        <CategoryItem title="Groenten" />
+        <CategoryItem title="Vlees" />
+        <CategoryItem title="Zuivel" />
+        <CategoryItem title="Vis" />
+        <CategoryItem title="Fruit" />
       </div>
     </section>
   </Layout>
