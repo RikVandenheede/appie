@@ -4,24 +4,10 @@
 @import "./colors.scss";
 @import "./fonts.scss";
 
-@import 
-"./store/leading",
-"./store/loading",
-"./store/container",
-"./store/scan",
-"./store/qr",
-"./store/shoppinglist",
-"./store/check";
+@import "./store/leading", "./store/loading", "./store/container",
+  "./store/scan", "./store/qr", "./store/shoppinglist", "./store/check";
 
 //// ATOMS ////
-<<<<<<< HEAD
-// @import "./atoms/weirdchamp.scss";
-// @import "./store/weirdchamp.scss";
-// @import "../style/store/weirdchamp.scss";
-
-//// MOLECULES ////
-// @import "./molecules/navigation.scss";
-=======
 @import "./app/atoms/layout";
 @import "./app/atoms/weirdchamp";
 @import "./app/atoms/winkelwagenItem";
@@ -30,7 +16,6 @@
 
 //// MOLECULES ////
 @import "./app/molecules/navigation.scss";
->>>>>>> a73825a2d61f6ab65deb64954d24b537e3a1627a
 
 //// VIEWS ////
 @import "./app/views/winkelwagenview.scss";
