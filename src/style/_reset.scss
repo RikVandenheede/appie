@@ -16,12 +16,17 @@ h1,
 h2 {
   font-family: $bodyFont;
   color: $black;
+  color: $primaryColor;
+}
+
+h2.nav-white {
+  color: $white;
 }
 
 h3,
 h4,
 h5 {
-  color: $black;
+  color: $primaryColor;
   font-family: $bodyFont;
   font-weight: bold;
 }

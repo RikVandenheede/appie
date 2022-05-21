@@ -1,9 +1,18 @@
 .shoppinglist-container {
-    // margin-top: 3rem;
-    // margin-bottom: 6rem;
     margin-left: auto;
     margin-right: auto;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: block;
+
+    z-index: 99;
 }
+
 .shoppinglist-list {
     columns: 2;
 }
@@ -12,23 +21,27 @@
     margin-left: auto;
     margin-right: auto;
 
-    // display: flex;
-    // flex-flow: column wrap;
-    // justify-content: flex-start;
-
-    // position: relative;
     width: 100%;
     padding-top: 1.5rem;
     padding-left: 4rem;
     padding-right: 4rem;
 
-    // max-width: 100%;
     max-height: 375px;
+
+    // background-color: $storeBg;
 }
 
 .list-item {
     color: $storeGreen;
     & + & {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
+}
+
+.shoppinglist-toggler {
+    position: relative;
+    background-color: yellow;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }

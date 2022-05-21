@@ -3,8 +3,8 @@
 		<h1 class="leading">
 			Alle producten werden gescand, <br />u kunt naar de kassa.
 		</h1>
-
 		<h1 class="leading">Product werd succesvol ingescand.</h1>
+        
 		<Check />
 	</main>
 

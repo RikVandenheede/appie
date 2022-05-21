@@ -1,0 +1,18 @@
+.toggler-shoppinglist {
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    background-color: #d8d8d8;
+
+    z-index: 99;
+}
+.toggler-headline {
+    color: $black;
+    text-align: center;
+}

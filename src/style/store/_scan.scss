@@ -12,8 +12,8 @@
 .qr-scanner .line {
     height: calc(100% - 2px);
     width: 100%;
-    background: linear-gradient(180deg, rgba(0, 255, 51, 0) 43%, #00ff33 211%);
-    border-bottom: 3px solid #00ff33;
+    background: linear-gradient(180deg, rgba(0, 255, 51, 0) 43%, $storeGreen 211%);
+    border-bottom: 3px solid $storeGreen;
     transform: translateY(-100%);
     animation: radar-beam 2s infinite;
     animation-timing-function: cubic-bezier(0.53, 0, 0.43, 0.99);
@@ -36,25 +36,25 @@
 .qr-scanner .box:after,
 .qr-scanner .box:before {
     top: 0;
-    border-top-color: #00ff33;
+    border-top-color: $storeGreen;
 }
 
 .qr-scanner .angle:after,
 .qr-scanner .angle:before {
     bottom: 0;
-    border-bottom-color: #00ff33;
+    border-bottom-color: $storeGreen;
 }
 
 .qr-scanner .box:before,
 .qr-scanner .angle:before {
     left: 0;
-    border-left-color: #00ff33;
+    border-left-color: $storeGreen;
 }
 
 .qr-scanner .box:after,
 .qr-scanner .angle:after {
     right: 0;
-    border-right-color: #00ff33;
+    border-right-color: $storeGreen;
 }
 
 @keyframes radar-beam {

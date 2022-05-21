@@ -14,7 +14,7 @@ import CategoryPage from "../views/app/CategorieView.vue";
 
 const routes = [
   {
-    path: "/",
+    path: "/nav",
     name: "scan",
     component: scan,
   },
