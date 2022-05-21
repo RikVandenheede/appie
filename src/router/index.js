@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 // import HomeView from '../views/store/HomeView.vue';
 import scan from "../views/store/ScanView.vue";
-import Loading from "../views/store/LoadingView.vue";
+// import Loading from "../views/store/LoadingView.vue";
 import NavWalk from "../views/store/NavWalkView.vue";
-import Check from "../views/store/CheckView.vue";
+// import Check from "../views/store/CheckView.vue";
 import Qr from "../views/store/QrView.vue";
 
 import HomeView from "../views/app/HomeView.vue";
@@ -14,27 +14,27 @@ import CategoryPage from "../views/app/CategorieView.vue";
 
 const routes = [
   {
-    path: "/nav",
+    path: "/qr-scan",
     name: "scan",
     component: scan,
   },
-  {
-    path: "/loading",
-    name: "loading",
-    component: Loading,
-  },
+  // {
+  //   path: "/loading",
+  //   name: "loading",
+  //   component: Loading,
+  // },
   {
     path: "/navwalk",
     name: "navwalk",
     component: NavWalk,
   },
+  // {
+  //   path: "/check",
+  //   name: "check",
+  //   component: Check,
+  // },
   {
-    path: "/check",
-    name: "check",
-    component: Check,
-  },
-  {
-    path: "/qr",
+    path: "/qr-kassa",
     name: "qr",
     component: Qr,
   },
