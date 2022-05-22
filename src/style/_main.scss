@@ -4,11 +4,16 @@
 @import "./colors.scss";
 @import "./fonts.scss";
 
-@import "./store/leading", "./store/loading", "./store/container",
-  "./store/scan", "./store/qr", "./store/shoppinglist", "./store/check";
-@import "./store/leading", "./store/loading", "./store/container",
-  "./store/scan", "./store/qr", "./store/shoppinglist", "./store/toggler",
-  "./store/store-navigation", "./store/check";
+@import 
+"./store/store-leading", 
+"./store/loading", 
+"./store/container",
+"./store/scan", 
+"./store/qr", 
+"./store/shoppinglist",
+"./store/toggler", 
+"./store/store-navigation", 
+"./store/check";
 
 //// ATOMS ////
 @import "./app/atoms/layout";
