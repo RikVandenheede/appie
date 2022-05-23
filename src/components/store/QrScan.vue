@@ -1,5 +1,5 @@
 <template>
-	<div class="qr-scanner">
+	<div class="qr-scanner" @click="click">
 		<div class="box">
 			<div class="line"></div>
 			<div class="angle"></div>
