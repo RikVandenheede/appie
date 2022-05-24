@@ -107,13 +107,6 @@ export default defineComponent({
 			this.success = false;
 			this.list.shift();
 		},
-
-		// listClick() {
-		// 	this.list.shift();
-		//     this.li
-		// 	this.success = true;
-		// 	console.log(this.list);
-		// },
 	},
 });
 </script>

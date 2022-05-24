@@ -3,7 +3,7 @@
 		<div class="store-navigation-content">
 			<div class="store-navigation-left">
 				<div class="store-navigation-arrow">
-					<div v-if="this.list[0].direction == 'links'">
+					<div v-if="this.list[0].direction === 'links'">
 						<img
 							src="/images/svg/arrow-left.svg"
 							alt="store-navigation arrow left"
