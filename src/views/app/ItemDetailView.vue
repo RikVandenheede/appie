@@ -33,7 +33,7 @@
                         <img class="nutriscore" src="../../../public/icons_app/nutriscoreIcons/Nutri-score-E.svg">
                     </div>
                     <div v-else>
-                        <p class="itemdetail__beschrijving__nutriscore">NutriScore: {{item.nutriScore}}</p>
+                        
                     </div>
                     
                 </div>

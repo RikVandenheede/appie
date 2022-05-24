@@ -62,8 +62,21 @@
         {id:49, brand:"AGROMONTE", name:"Pass.salsa kerstom. glas", category:["Groenten"], subcategory:["Tomaten"], amount:1, price:2.89, description:"", nutriScore:"a", previewImg:"https://images.collectandgo.be/images/step/JPG/JPG/500x500/std.lang.all/45/46/asset-2274546.jpg"},
         {id:50, brand:"ELVEA", name:"Tomaten blokjes gepeld", category:["Groenten"], subcategory:["Tomaten"], amount:1, price:1.99, description:"", nutriScore:"n/a", previewImg:"https://images.collectandgo.be/images/step/JPG/JPG/500x500/std.lang.all/89/30/asset-1718930.jpg"},
         {id:51, brand:"BONI", name:"Taboulé paprika-tomaat", category:["Groenten"], subcategory:["Tomaten"], amount:1, price:2.29, description:"", nutriScore:"a", previewImg:"https://images.collectandgo.be/images/step/JPG/JPG/500x500/std.lang.all/76/14/asset-2797614.jpg"},
-        
-
+        ////////////////////////////////////////////////////////////////Huishoudproducten////////////////////////////////////////////////////////////////
+        {id:52, brand:"Clorox", name:"Clorox Disinfecting Bleach", category:["Huishoudproducten"], subcategory:[""], amount:1, price:41.00, description:"", nutriScore:"n/a", previewImg:"https://i5.walmartimages.com/asr/bcd49e3f-aab2-44e5-82e0-1bcb1ca4b664_1.572cbe96f87082945f06931d8b31c205.jpeg"},
+        {id:53, brand:"DASH", name:"Wasdraadfris", category:["Huishoudproducten"], subcategory:[""], amount:1, price:13.94, description:"", nutriScore:"n/a", previewImg:"https://static.colruytgroup.com/images/500x500/std.lang.all/59/51/asset-2145951.jpg"},
+        {id:54, brand:"DASH", name:"Wasdraadfris bloemen", category:["Huishoudproducten"], subcategory:[""], amount:1, price:13.94, description:"", nutriScore:"n/a", previewImg:"https://images.collectandgo.be/images/step/JPG/JPG/500x500/std.lang.all/21/06/asset-2782106.jpg"},
+        {id:56, brand:"AH", name:"Mop + emmer", category:["Huishoudproducten"], subcategory:[""], amount:1, price:13.94, description:"", nutriScore:"n/a", previewImg:"https://media.discordapp.net/attachments/251688346672168963/978583690550595644/MicrosoftTeams-image.png?width=450&height=676"},
+        {id:57, brand:"VILEDA", name:"Dweilen Colors", category:["Huishoudproducten"], subcategory:[""], amount:1, price:4.15, description:"", nutriScore:"n/a", previewImg:"https://images.collectandgo.be/images/step/JPG/JPG/500x500/std.lang.all/39/36/asset-2123936.jpg"},
+        {id:58, brand:"CURVER", name:"Emmer 13 L", category:["Huishoudproducten"], subcategory:[""], amount:1, price:5.99, description:"", nutriScore:"n/a", previewImg:"https://images.collectandgo.be/images/step/JPG/JPG/500x500/std.lang.all/62/00/asset-336200.jpg"},
+        {id:59, brand:"AH", name:"Latex handschoenen", category:["Huishoudproducten"], subcategory:[""], amount:1, price:17.45, description:"", nutriScore:"n/a", previewImg:"https://media.discordapp.net/attachments/251688346672168963/978583828559970334/MicrosoftTeams-image_2.png"},
+        {id:60, brand:"BONI SELECTION", name:"Vloerwisser met steel", category:["Huishoudproducten"], subcategory:[""], amount:1, price:17.45, description:"", nutriScore:"n/a", previewImg:"https://images.collectandgo.be/images/step/JPG/JPG/500x500/nl_be/91/59/asset-2299159.jpg"},
+        {id:61, brand:"AH", name:"Vuilniszakken zwart", category:["Huishoudproducten"], subcategory:[""], amount:1, price:17.45, description:"", nutriScore:"n/a", previewImg:"https://images.collectandgo.be/images/step/JPG/JPG/500x500/nl_be/91/59/asset-2299159.jpg"},
+        {id:62, brand:"TESSA", name:"Duct Tape", category:["Huishoudproducten"], subcategory:[""], amount:1, price:11.16, description:"", nutriScore:"n/a", previewImg:"https://media.discordapp.net/attachments/251688346672168963/978583828220243998/MicrosoftTeams-image_3.png?width=547&height=675"},
+        ////////////////////////////////////////////////////////////////Keukengerei////////////////////////////////////////////////////////////////
+        {id:63, brand:"Zwilling", name:"Chef mes", category:["Keukengerei"], subcategory:[""], amount:1, price:10.12, description:"", nutriScore:"n/a", previewImg:"https://media.discordapp.net/attachments/251688346672168963/978583827570110494/MicrosoftTeams-image_5.png?width=1014&height=676"},
+        ////////////////////////////////////////////////////////////////Tuingerief////////////////////////////////////////////////////////////////
+        {id:64, brand:"vidaXL", name:"Boot touw", category:["Keukengerei"], subcategory:[""], amount:1, price:10.12, description:"", nutriScore:"n/a", previewImg:"https://media.discordapp.net/attachments/251688346672168963/978583830275432458/MicrosoftTeams-image_6.png?width=676&height=676"},
   ];
 
 
