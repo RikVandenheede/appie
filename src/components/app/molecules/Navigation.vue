@@ -71,6 +71,7 @@
       v-bind:to="{ name: 'winkelwagentje' }"
       :class="{ active: isActive == pageNumber }"
     >
+      <span class="winkelwagen-counter">{{ counter }}</span>
       <svg
         @click="isActive = 3"
         xmlns="http://www.w3.org/2000/svg"
@@ -134,8 +135,21 @@ export default defineComponent({
   data() {
     return {
       isActive: false,
+      counter: 0,
     };
   },
-  computed() {},
+  created() {
+    this.myCounter();
+  },
+  methods: {
+    myCounter() {
+      setInterval(() => {
+        let counter = 0;
+        const winkelLijst = JSON.parse(sessionStorage.getItem("winkelwagen"));
+        winkelLijst && winkelLijst.forEach((e) => (counter += e.amount));
+        this.counter = counter;
+      }, 0);
+    },
+  },
 });
 </script>

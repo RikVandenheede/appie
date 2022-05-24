@@ -36,13 +36,17 @@
       }
     }
   }
-
-  &__qr {
-  }
-
-  &__home {
-  }
-
-  &__shopping {
+  .winkelwagen-counter {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: $primaryColor;
+    border-radius: 50%;
+    right: 45px;
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
