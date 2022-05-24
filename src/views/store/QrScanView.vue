@@ -1,6 +1,6 @@
 <template>
 	<div class="store-container">
-		<h1 class="store-leading">Plaats de QR code binnen het frame.</h1>
+		<h1 class="store-leading">Plaats de QR code binnen het frame</h1>
 		<router-link to="/navwalk">
 			<QrScan />
 		</router-link>

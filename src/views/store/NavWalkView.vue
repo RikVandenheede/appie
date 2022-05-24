@@ -1,24 +1,27 @@
 <template>
 	<div class="store-container">
 		<div v-show="!success">
-			<NavWalkMain
-				:navigation="this.navigation"
-				:list="this.list"
-				@click="successOn()"
-			/>
-			<NavWalkAside :shoppinglist="this.shoppinglist" />
+			<Transition name="mainTrans">
+				<NavWalkMain
+					:navigation="this.navigation"
+					:list="this.list"
+					@click="successOn()"
+				/>
+			</Transition>
+			<Transition name="asideTrans">
+				<NavWalkAside
+					:shoppinglist="this.shoppinglist"
+					:list="this.list"
+				/>
+			</Transition>
 		</div>
 
 		<div class="store-succes" v-show="success">
-			<h1 v-if="this.list.length">Uw product werd gescand</h1>
+			<h1 v-if="this.list.length > 1">Uw product werd gescand</h1>
 			<h1 v-else>
 				Alle producten werden gescand, <br />
 				u kunt
-				<router-link
-					to="/qr-kassa"
-					v-if="!this.list.length"
-					class="white"
-				>
+				<router-link to="/qr-kassa" class="white">
 					naar de kassa
 				</router-link>
 			</h1>
@@ -32,7 +35,8 @@
 		>
 			<div class="toggler-content">
 				<h4 class="toggler-headline">
-					Tik hier om boodschappenlijst te {{ this.message }}
+					Tik hier om boodschappenlijst te
+					{{ this.message }}
 				</h4>
 			</div>
 		</div>
@@ -56,7 +60,6 @@ export default defineComponent({
 		NavWalkAside,
 		Success,
 	},
-
 	data() {
 		return {
 			navigation: true,
@@ -65,33 +68,54 @@ export default defineComponent({
 			success: false,
 			list: [
 				{
-					item: 'Peren',
+					item: 'DuckTape',
 					direction: 'links',
-					rack: 5,
+					rack: 6,
 					shelf: 3,
 				},
 				{
-					item: 'Appelen',
+					item: 'Koksmes',
 					direction: 'rechts',
 					rack: 10,
 					shelf: 1,
 				},
 				{
-					item: 'Bananen',
+					item: 'Vuilniszakken',
 					direction: 'links',
 					rack: 12,
 					shelf: 2,
 				},
 				{
-					item: 'Wortelen',
+					item: 'Touw',
+					direction: 'rechts',
+					rack: 1,
+					shelf: 3,
+				},
+				{
+					item: 'Bleekmiddel',
 					direction: 'rechts',
 					rack: 15,
 					shelf: 1,
 				},
+				{
+					item: 'Rubberen handschoenen',
+					direction: 'rechts',
+					rack: 6,
+					shelf: 1,
+				},
+				{
+					item: 'Dweilstok met emmer',
+					direction: 'rechts',
+					rack: 4,
+					shelf: 1,
+				},
 			],
-			newList: [],
 		};
 	},
+	mounted() {
+		this.list.sort((a, b) => a.rack - b.rack);
+	},
+
 	methods: {
 		toggleList() {
 			this.navigation = !this.navigation;
@@ -106,9 +130,36 @@ export default defineComponent({
 		successOff() {
 			this.success = false;
 			this.list.shift();
+			console.log(this.list);
 		},
 	},
 });
 </script>
 
-<style></style>
+<style scoped>
+.mainTrans-enter-active,
+.mainTrans-leave-active {
+	transition: opacity 0.5s ease-in;
+	-moz-transform: translateY(-200%);
+	transform: translateY(-100%);
+	transition: all 0.5s ease-in;
+}
+
+.mainTrans-enter-from,
+.mainTrans-leave-to {
+	opacity: 0;
+}
+
+.asideTrans-enter-active,
+.asideTrans-leave-active {
+	transition: opacity 0.5s ease-in;
+	-moz-transform: translateY(200%);
+	transform: translateY(100%);
+	transition: all 0.5s ease-in;
+}
+
+.asideTrans-enter-from,
+.asideTrans-leave-to {
+	opacity: 0;
+}
+</style>

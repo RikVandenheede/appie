@@ -4,6 +4,12 @@
     background-color: $storeBlack;
 }
 
+.store-navigation-headline {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: $storeGreen;
+}
+
 .store-navigation-content {
     min-width: 100%;
     height: 335px;
@@ -26,7 +32,11 @@
 .store-navigation-arrow {
     width: 33px;
     height: 60px;
-    margin-right: 1.5rem;
+    margin-right: 5rem;
+
+    img {
+        width: 70px;
+    }
 }
 
 .store-navigation-right {

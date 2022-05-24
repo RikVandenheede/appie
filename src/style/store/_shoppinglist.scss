@@ -11,11 +11,11 @@
     display: block;
 
     z-index: 99;
-
 }
 
 .shoppinglist-list {
     columns: 2;
+    column-gap: 6rem;
 }
 
 .shoppinglist-content {
@@ -24,25 +24,31 @@
 
     width: 100%;
     padding-top: 1.5rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 
     max-height: 375px;
-
-    // background-color: $storeBg;
+    max-width: 600px;
 }
 
-.list-item {
+.shoppinglist-item {
     color: $storeGreen;
+    font-size: 1.5rem;
+    list-style-type: disc; // max-width: fit-content;
     & + & {
-        margin-top: 0.5rem;
+        margin-top: 0.7rem;
     }
 }
 
 .shoppinglist-toggler {
     position: relative;
-    background-color: yellow;
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.store-navigation-text {
+    h2 + h2 {
+        margin-top: 0.5rem;
+    }
 }
