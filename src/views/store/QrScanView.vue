@@ -1,8 +1,7 @@
 <template>
 	<div class="store-container">
 		<h1 class="store-leading">Plaats de QR code binnen het frame.</h1>
-		<router-link to="/navwalk"
-			>
+		<router-link to="/navwalk">
 			<QrScan />
 		</router-link>
 	</div>
@@ -20,8 +19,6 @@ export default defineComponent({
 	components: {
 		QrScan,
 	},
-	methods: {
-
-	},
+	methods: {},
 });
 </script>
