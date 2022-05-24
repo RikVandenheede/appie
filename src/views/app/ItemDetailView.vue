@@ -10,7 +10,7 @@
                         <h3>{{item.name}}</h3>
                         <p>{{item.brand}}</p>
                     </div>
-                    <div class="itemdetail__text__addtocard-button" id="additemtocart-button">
+                    <div class="itemdetail__text__addtocard-button" id="additemtocart-button" @click="additemtocart(item)">
                         <img src="../../../public/icons_app/addtocart.png">
                     </div>
                 </div>
@@ -61,6 +61,25 @@ export default {
     created(){
         let ItemOnID  = data.filter(x => x.id == this.id);
         this.item = ItemOnID[0]
+    },
+    methods: {
+        additemtocart(item){
+            console.log(item)
+            if(sessionStorage.getItem("winkelwagen") == undefined){
+                sessionStorage.setItem('winkelwagen',JSON.stringify([item]));
+            }else{
+                let inputVanStorage = JSON.parse(sessionStorage.getItem('winkelwagen'));
+                const itemInStorageMetZelfdeID =  inputVanStorage.filter((x) =>  x.id == item.id );
+
+                if(itemInStorageMetZelfdeID.length == 1){
+                    itemInStorageMetZelfdeID[0].amount++;
+                    sessionStorage.setItem('winkelwagen',JSON.stringify(inputVanStorage));
+                }else{
+                    inputVanStorage.push(item);
+                    sessionStorage.setItem('winkelwagen',JSON.stringify(inputVanStorage));
+                }
+            }
+        }
     }
 }
 </script>

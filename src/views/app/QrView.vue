@@ -7,7 +7,8 @@
                     <p>Scan hier je QR code zodat je verder kan winkelen in je favoriete winkel!</p>
                 </div>
                 <div class="qr-div__qr">
-                    <img src="../../../public/icons_app/qrcode-app.png">
+                    <!-- TODO: hier zou nog een routerlink moeten op de qr voor naar de andere app te klikken -->
+                    <img src="../../../public/icons_app/qrcode-app.png" > 
                 </div>
                 <div class="qr-div__bottomtext">
                     <h3>Hoe werkt dit nu?</h3>

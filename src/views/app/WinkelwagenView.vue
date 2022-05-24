@@ -28,7 +28,7 @@ import Layout from "@/components/app/atoms/Layout.vue";
 import Navigation from "@/components/app/molecules/Navigation.vue";
 
 //test data
-import { data } from "@/data.js";
+//import { data } from "@/data.js";
 
 export default defineComponent({
   name: "winkelwagenView",
@@ -45,15 +45,19 @@ export default defineComponent({
   },
   created() {
     //add van test data
-    console.log(data);
-    let arry = [];
-    for (let i = 0; i < 50; i++) {
-      arry.push(data[i]);
-    }
-    this.inCart = arry;
-    console.log(arry);
-    console.log(this.inCart);
+    //console.log(data);
+    //let arry = [];
+    //for (let i = 0; i < 50; i++) {
+    //  arry.push(data[i]);
+    //}
+    //this.inCart = arry;
+    //console.log(arry);
+    //console.log(this.inCart);
     ////////////////////////////////////////////////////////////////////////////////////////////////
+    if(sessionStorage.getItem("winkelwagen") != undefined){
+      let inputVanStorage = JSON.parse(sessionStorage.getItem('winkelwagen'));
+      this.inCart = inputVanStorage;
+    }
   },
 });
 </script>
