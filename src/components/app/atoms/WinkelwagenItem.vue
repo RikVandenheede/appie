@@ -15,8 +15,13 @@
         <p>{{ item.amount }}</p>
       </div>
     </div>
-    <span class="first-child" :class="{ toggled: isToggled }">-</span>
-    <span :class="{ toggled: isToggled }">+</span>
+    <span
+      class="first-child"
+      @click="removeItemFromCart(item)"
+      :class="{ toggled: isToggled }"
+      >-</span
+    >
+    <span @click="additemtocart(item)" :class="{ toggled: isToggled }">+</span>
   </div>
 </template>
 <script>
@@ -38,6 +43,53 @@ export default defineComponent({
   methods: {
     toggleAnimation(toggler) {
       this.isToggled = !toggler;
+    },
+    additemtocart(item) {
+      console.log(item);
+      if (sessionStorage.getItem("winkelwagen") == undefined) {
+        sessionStorage.setItem("winkelwagen", JSON.stringify([item]));
+      } else {
+        let inputVanStorage = JSON.parse(sessionStorage.getItem("winkelwagen"));
+        const itemInStorageMetZelfdeID = inputVanStorage.filter(
+          (x) => x.id == item.id
+        );
+
+        if (itemInStorageMetZelfdeID.length == 1) {
+          itemInStorageMetZelfdeID[0].amount++;
+          sessionStorage.setItem(
+            "winkelwagen",
+            JSON.stringify(inputVanStorage)
+          );
+        } else {
+          inputVanStorage.push(item);
+          sessionStorage.setItem(
+            "winkelwagen",
+            JSON.stringify(inputVanStorage)
+          );
+        }
+      }
+    },
+    removeItemFromCart(item) {
+      console.log(item);
+      let inputVanStorage = JSON.parse(sessionStorage.getItem("winkelwagen"));
+      const itemInStorageMetZelfdeID = inputVanStorage.filter(
+        (x) => x.id == item.id
+      );
+
+      if (itemInStorageMetZelfdeID.length == 1) {
+        itemInStorageMetZelfdeID[0].amount--;
+        sessionStorage.setItem("winkelwagen", JSON.stringify(inputVanStorage));
+      }
+
+      if (itemInStorageMetZelfdeID[0].amount === 0) {
+        const overgeblevenItems = inputVanStorage.filter(
+          (x) => x.id != item.id
+        );
+        sessionStorage.setItem(
+          "winkelwagen",
+          JSON.stringify(overgeblevenItems)
+        );
+      }
     },
   },
 });

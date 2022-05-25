@@ -73,7 +73,7 @@
     }
 
     &.toggled {
-      right: 155px;
+      right: 50%;
 
       & ion-icon {
         transform: rotate(135deg);
@@ -100,9 +100,9 @@ span {
   top: 0;
   right: 0;
   background-color: #fb9a5d;
-  padding: 0 0 0 7px;
   z-index: -1;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 
   & + span {
     right: 25%;
@@ -111,6 +111,7 @@ span {
   }
 
   &.first-child {
+    padding: 0 0 5px 7px;
     border-radius: 0 10px 10px 0;
   }
 
