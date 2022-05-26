@@ -6,15 +6,14 @@
 
 @import 
 "./store/store-leading", 
-"./store/loading", 
-"./store/container",
-"./store/scan", 
-"./store/qr", 
-"./store/shoppinglist",
-"./store/toggler", 
+"./store/store-loading", 
+"./store/store-container",
+"./store/store-scan", 
+"./store/store-qr", 
+"./store/store-shoppinglist",
+"./store/store-toggler", 
 "./store/store-navigation", 
-"./store/store-success", 
-"./store/check";
+"./store/store-success";
 
 //// ATOMS ////
 @import "./app/atoms/layout";
