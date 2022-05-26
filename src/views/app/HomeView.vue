@@ -30,7 +30,7 @@
     <section class="home-korting">
       <img src="../../../public/spa.png" alt="spa" />
       <h2 class="home-korting__title">
-        <span>Krijg tot </span><br />
+        <div class="korting">Krijg tot</div>
         10% korting
       </h2>
     </section>

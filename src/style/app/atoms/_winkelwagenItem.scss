@@ -1,64 +1,159 @@
-.itemlink{
-    all: unset;
-    .winkewagen-item{
-        background-color: white;
-        margin-bottom: 10px; 
-        overflow: hidden;
-        border-radius: 10px;
-        display: flex;
-        height: 80px;
-        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
-        padding-right: 10px;
+.myBigZiggy {
+  position: relative;
+  border-radius: 10px;
+  height: 80px;
+  margin: 0 0 10px 0;
+  //   .itemlink {
+  //     position: absolute;
+  //     width: 100%;
+  //     height: 100%;
+  //     right: 0;
+  //     all: unset;
 
-            
-        &__text{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            margin-left: 20px;
-            padding-right: 70px;
-        
-            &__name{
-                font-size: 11px;
-                margin-bottom: 3px;
-                font-weight: 600;
-                color: #0E7500;
-            }
+  .winkewagen-item {
+    background-color: white;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    height: 80px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    padding-right: 10px;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    z-index: 6;
+    transition: all 0.3s ease-in-out;
 
-            &__brand{
-                font-size: 10px;
-                color: #23A811;
-            }
-        }
-    
-        &__img{
-            height: 80px;
-            min-width: 125px;
-            max-width: 125px;
-            object-fit: contain;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    &__text {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 20px;
+      padding-right: 70px;
 
-            img{
-                width: auto;
-                height: 100%;
-            }
-        }
-        
-        &__hoeveelheid{
+      &__name {
+        font-size: 11px;
+        margin-bottom: 3px;
+        font-weight: 600;
+        color: #0e7500;
+      }
 
-            float: left;
-            position: absolute;
-            margin-top: 56px;
-            margin-left: 295px;
-
-            p{
-                font-size: 10px;
-            }
-        }
-            
+      &__brand {
+        font-size: 10px;
+        color: #23a811;
+      }
     }
-    
+
+    &__img {
+      height: 80px;
+      min-width: 125px;
+      max-width: 125px;
+      object-fit: contain;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    &__hoeveelheid {
+      float: left;
+      position: absolute;
+      margin-top: 56px;
+      margin-left: 295px;
+
+      p {
+        font-size: 10px;
+      }
+    }
+
+    &.toggled {
+      right: 50%;
+
+      & ion-icon {
+        transform: rotate(135deg);
+      }
+
+      & span {
+        z-index: 5;
+        & + span {
+          right: 0;
+        }
+      }
+    }
+  }
+}
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  height: 100%;
+  width: 28%;
+  top: 0;
+  right: 0;
+  background-color: #fb9a5d;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  & + span {
+    right: 25%;
+    background-color: #86ff76;
+    border-radius: 0 10px 10px 0;
+  }
+
+  &.first-child {
+    padding: 0 0 5px 7px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  &:not(.toggled) {
+    right: 0;
+  }
+
+  &.toggled {
+    z-index: 5;
+    animation: zindex 1s;
+  }
+}
+
+@keyframes zindex {
+  0% {
+    z-index: -1;
+  }
+  50% {
+    z-index: -1;
+  }
+  100% {
+    z-index: 5;
+  }
+}
+
+.slider-toggler {
+  position: absolute;
+  right: -60px;
+  width: 100px;
+  height: 40px;
+  transform: rotate(45deg);
+  background-color: #81cd77;
+  z-index: 1;
+
+  ion-icon {
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 21px;
+    right: 62px;
+    transform: rotate(-45deg);
+    color: white;
+    font-size: 1.2rem;
+  }
+  //   }
 }

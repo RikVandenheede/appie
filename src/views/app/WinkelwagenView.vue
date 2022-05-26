@@ -54,10 +54,25 @@ export default defineComponent({
     //console.log(arry);
     //console.log(this.inCart);
     ////////////////////////////////////////////////////////////////////////////////////////////////
-    if(sessionStorage.getItem("winkelwagen") != undefined){
-      let inputVanStorage = JSON.parse(sessionStorage.getItem('winkelwagen'));
-      this.inCart = inputVanStorage;
-    }
+
+    // if (sessionStorage.getItem("winkelwagen") != undefined) {
+    //   let inputVanStorage = JSON.parse(sessionStorage.getItem("winkelwagen"));
+    //   this.inCart = inputVanStorage;
+    // }
+
+    this.myCounter();
+  },
+  methods: {
+    myCounter() {
+      setInterval(() => {
+        if (sessionStorage.getItem("winkelwagen") != undefined) {
+          let inputVanStorage = JSON.parse(
+            sessionStorage.getItem("winkelwagen")
+          );
+          this.inCart = inputVanStorage;
+        }
+      }, 0);
+    },
   },
 });
 </script>
