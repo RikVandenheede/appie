@@ -40,6 +40,27 @@
           src="../../../../public/fruit.png"
           alt="category"
         />
+        <img
+          v-else-if="title == 'Huishouden'"
+          :class="imageClassName"
+          style="background-color: #e1f3fe; width: 100%"
+          src="../../../../public/huisgerei.png"
+          alt="category"
+        />
+        <img
+          v-else-if="title == 'Keukengerei'"
+          :class="imageClassName"
+          style="background-color: #fef9e1; width: 100%"
+          src="../../../../public/keukengerei.png"
+          alt="category"
+        />
+        <img
+          v-else-if="title == 'Tuingerief'"
+          :class="imageClassName"
+          style="background-color: #e1fee8; width: 100%"
+          src="../../../../public/tuingerief.png"
+          alt="category"
+        />
       </div>
       <div class="category-item__bottom">
         <h3 class="category-item__title">{{ title }}</h3>

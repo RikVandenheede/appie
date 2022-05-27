@@ -43,6 +43,9 @@
         <CategoryItem title="Zuivel" />
         <CategoryItem title="Vis" />
         <CategoryItem title="Fruit" />
+        <CategoryItem title="Huishouden" />
+        <CategoryItem title="Keukengerei" />
+        <CategoryItem title="Tuingerief" />
       </div>
     </section>
   </Layout>
