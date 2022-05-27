@@ -56,9 +56,7 @@
             />
           </div>
           <div v-else>
-            <p class="itemdetail__beschrijving__nutriscore">
-              NutriScore: {{ item.nutriScore }}
-            </p>
+            <p class="itemdetail__beschrijving__nutriscore"></p>
           </div>
         </div>
       </div>
