@@ -1,7 +1,6 @@
 <template>
 	<aside class="shoppinglist-container" v-show="shoppinglist">
 		<div class="store-leading">Boodschappenlijst</div>
-
 		<div class="shoppinglist-content">
 			<ul class="shoppinglist-list">
 				<li

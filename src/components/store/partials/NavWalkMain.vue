@@ -26,7 +26,6 @@
 					</h2>
                     <h2 class="nav-white" v-else>over {{this.list[0].rack}} meter</h2>
 					<br />
-					<br />
 					<h2 class="nav-white uppercase">
 						STELLING: {{ this.list[0].rack }}
 					</h2>
