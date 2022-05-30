@@ -1,74 +1,69 @@
-.itemlink{
-    all: unset;
-    .categorypage-item{
-        background-color: white;
-        margin-bottom: 10px; 
-        overflow: hidden;
-        border-radius: 10px;
-        display: flex;
-        height: 80px;
-        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
-        padding-right: 10px;
+.categorypage-item__hoeveelheid {
+  float: left;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 250px;
 
-            
-        &__text{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            margin-left: 20px;
-            padding-right: 70px;
-        
-            &__name{
-                font-size: 11px;
-                margin-bottom: 3px;
-                font-weight: 600;
-                color: #0E7500;
-            }
+  //background-color: #28A745;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  cursor: pointer;
 
-            &__brand{
-                font-size: 10px;
-                color: #23A811;
-            }
-        }
-    
-        &__img{
-            height: 80px;
-            min-width: 125px;
-            max-width: 125px;
-            object-fit: contain;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+  img {
+    margin-top: 2px;
+    margin-left: 13px;
+    width: 30px;
+    height: auto;
+  }
+}
 
-            img{
-                width: auto;
-                height: 100%;
-            }
-        }
-        
-        &__hoeveelheid{
+.itemlink {
+  all: unset;
+  .categorypage-item {
+    background-color: white;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    height: 80px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    padding-right: 10px;
 
-            float: left;
-            position: absolute;
-            margin-top: 25px;
-            margin-left: 250px;
+    &__text {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 20px;
+      padding-right: 70px;
 
-            //background-color: #28A745;
-            height: 50px;
-            width: 50px;
-            border-radius: 10px;
-            cursor: pointer;
+      &__name {
+        font-size: 11px;
+        margin-bottom: 3px;
+        font-weight: 600;
+        color: #0e7500;
+      }
 
-            img{
-                margin-top:2px;
-                margin-left:13px;
-                width: 30px;
-                height: auto;
-            }
-           
-        }
-            
+      &__brand {
+        font-size: 10px;
+        color: #23a811;
+      }
     }
-    
+
+    &__img {
+      height: 80px;
+      min-width: 125px;
+      max-width: 125px;
+      object-fit: contain;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
 }
