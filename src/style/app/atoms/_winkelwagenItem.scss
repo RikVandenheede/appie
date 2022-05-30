@@ -75,7 +75,7 @@
     &.toggled {
       right: 50%;
 
-      & ion-icon {
+      & svg {
         transform: rotate(135deg);
       }
 
@@ -146,14 +146,15 @@ span {
   background-color: #81cd77;
   z-index: 1;
 
-  ion-icon {
+  svg {
     transition: all 0.3s ease-in-out;
     position: absolute;
-    top: 21px;
-    right: 62px;
+    top: 22px;
+    right: 61px;
     transform: rotate(-45deg);
     color: white;
-    font-size: 1.2rem;
+    width: 20px;
+    height: 20px;
   }
   //   }
 }

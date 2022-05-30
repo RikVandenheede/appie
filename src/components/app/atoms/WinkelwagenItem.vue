@@ -2,7 +2,21 @@
   <div class="myBigZiggy">
     <div class="winkewagen-item" :class="{ toggled: isToggled }">
       <div class="slider-toggler" @click="toggleAnimation(isToggled)">
-        <ion-icon name="chevron-back-outline"></ion-icon>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <title>Chevron Back</title>
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="48"
+            d="M328 112L184 256l144 144"
+          />
+        </svg>
       </div>
       <div class="winkewagen-item__img">
         <img :src="item.previewImg" />
