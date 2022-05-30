@@ -1,6 +1,5 @@
 <template lang="">
   <div>
-    <!--TODO: make empty state, kijk of er iets in winkelwagen zit of niet-->
     <Layout :options="{ title: 'QR', arrow: false, search: false }">
       <div class="qr-div">
         <div class="qr-div__toptext">
@@ -11,7 +10,9 @@
         </div>
         <div class="qr-div__qr">
           <!-- TODO: hier zou nog een routerlink moeten op de qr voor naar de andere app te klikken -->
-          <img src="../../../public/icons_app/qrcode-app.png" />
+          <router-link v-bind:to="{ name: 'QrScan' }">
+            <img src="../../../public/icons_app/qrcode-app.png" />
+          </router-link>
         </div>
         <div class="qr-div__bottomtext">
           <h3>Hoe werkt dit nu?</h3>
